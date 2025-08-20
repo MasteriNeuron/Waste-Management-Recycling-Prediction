@@ -1,0 +1,1580 @@
+2025-08-19 19:30:36,378 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 19:30:36,378 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 19:30:36,378 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 19:30:36,378 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 19:30:36,394 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 19:30:36,415 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 19:30:39,526 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 19:30:40,126 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 19:30:40,198 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 19:30:40,198 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 19:30:42,120 - RecyclingPrediction - INFO - LightGBM R²: 0.6861
+2025-08-19 19:30:42,120 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 19:30:50,161 - RecyclingPrediction - INFO - XGBoost R²: 0.7459
+2025-08-19 19:30:50,162 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-19 19:31:02,883 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9772
+2025-08-19 19:31:03,131 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 19:31:03,133 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-19 19:31:03,135 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-19 19:31:03,762 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-19 19:31:03,762 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-19 19:31:03,778 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 19:31:03,778 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 19:31:03,778 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-19 19:31:04,034 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 19:31:04,240 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 19:31:04,251 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 19:31:04,263 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 19:31:04,264 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 19:31:04,264 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9772
+2025-08-19 19:33:25,826 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:33:25,826 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:33:29,219 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:33:29,221 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:43:24,884 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:43:24,884 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:43:28,613 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:43:28,613 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:43:52,214 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 19:43:52,215 - RecyclingPrediction - ERROR - Failed to load artifacts: load_model() got an unexpected keyword argument 'model_name'
+2025-08-19 19:43:52,215 - RecyclingPrediction - ERROR - Model artifacts not found
+2025-08-19 19:43:55,323 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 19:43:57,530 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 19:43:57,530 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 19:43:57,534 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 19:43:57,534 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 19:43:57,554 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 19:43:57,566 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 19:44:00,646 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 19:44:01,244 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 19:44:01,295 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 19:44:01,295 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 19:44:03,284 - RecyclingPrediction - INFO - LightGBM R²: 0.6871
+2025-08-19 19:44:03,284 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 19:44:10,986 - RecyclingPrediction - INFO - XGBoost R²: 0.7396
+2025-08-19 19:44:10,986 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-19 19:44:23,864 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9750
+2025-08-19 19:44:24,099 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 19:44:24,103 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-19 19:44:24,103 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-19 19:44:24,757 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-19 19:44:24,757 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-19 19:44:24,757 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 19:44:24,757 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 19:44:24,757 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-19 19:44:25,019 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 19:44:25,019 - RecyclingPrediction - ERROR - Training error: load_model() got an unexpected keyword argument 'model_name'
+2025-08-19 19:45:10,898 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:45:10,898 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:46:52,351 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:46:52,351 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:46:59,369 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:46:59,369 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:47:09,069 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:47:09,069 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:47:09,553 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 19:47:09,563 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 19:47:09,576 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 19:47:09,578 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 19:47:09,578 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 19:47:09,578 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 19:47:13,043 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:47:13,043 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:47:13,548 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 19:47:13,548 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 19:47:13,550 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 19:47:13,550 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 19:47:13,550 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 19:47:13,550 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 19:47:13,601 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 19:47:13,601 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 19:47:13,609 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 19:47:13,609 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 19:47:13,630 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 19:47:13,638 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 19:47:16,912 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 19:47:17,544 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 19:47:17,595 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 19:47:17,595 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 19:47:19,371 - RecyclingPrediction - INFO - LightGBM R²: 0.6685
+2025-08-19 19:47:19,371 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 19:47:26,936 - RecyclingPrediction - INFO - XGBoost R²: 0.7491
+2025-08-19 19:47:26,936 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-19 19:47:39,810 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9769
+2025-08-19 19:47:40,088 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 19:47:40,092 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-19 19:47:40,094 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-19 19:47:40,773 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-19 19:47:40,775 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-19 19:47:40,775 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 19:47:40,775 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 19:47:40,775 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-19 19:47:41,040 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 19:47:41,245 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 19:47:41,255 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 19:47:41,267 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 19:47:41,268 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 19:47:41,268 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 19:47:41,288 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9769
+2025-08-19 19:48:20,940 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 19:48:20,946 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 19:48:20,947 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 19:48:20,947 - RecyclingPrediction - ERROR - Single instance prediction failed: create_hybrid_features() got an unexpected keyword argument 'target_encodings_path'
+2025-08-19 19:48:20,947 - RecyclingPrediction - ERROR - Prediction error: create_hybrid_features() got an unexpected keyword argument 'target_encodings_path'
+2025-08-19 19:53:35,186 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 19:53:35,188 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 19:53:35,748 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 19:53:35,750 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 19:53:35,750 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 19:53:35,750 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 19:53:35,750 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 19:53:35,750 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:43:57,077 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:43:57,085 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:43:58,943 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:43:58,943 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:43:58,945 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:43:58,945 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:43:58,945 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:43:58,945 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:44:02,886 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:44:02,886 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:44:03,473 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:44:03,473 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:44:03,475 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:44:03,475 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:44:03,475 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:44:03,475 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:44:09,209 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 20:44:13,214 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 20:44:13,214 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 20:44:13,232 - RecyclingPrediction - INFO - Creating hybrid features (is_training=True, target_encodings_path=None)...
+2025-08-19 20:44:13,312 - RecyclingPrediction - ERROR - Training error: expected str, bytes or os.PathLike object, not NoneType
+2025-08-19 20:46:00,576 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:46:00,576 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:46:02,090 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:46:02,090 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:46:02,090 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:46:02,092 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:46:02,092 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:46:02,092 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:46:06,104 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:46:06,104 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:46:06,587 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:46:06,588 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:46:06,588 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:46:06,588 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:46:06,588 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:46:06,588 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:46:07,937 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 20:46:07,937 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 20:46:07,943 - RecyclingPrediction - INFO - Creating hybrid features (is_training=True, target_encodings_path=src/datasets/processed/)...
+2025-08-19 20:46:07,959 - RecyclingPrediction - ERROR - Training error: [Errno 13] Permission denied: 'src/datasets/processed/'
+2025-08-19 20:47:30,048 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:47:30,048 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:47:30,560 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:47:30,560 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:47:30,562 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:47:30,562 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:47:30,562 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:47:30,562 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:47:37,651 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:47:37,651 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:47:38,172 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:47:38,172 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:47:38,174 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:47:38,174 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:47:38,174 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:47:38,174 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:47:40,146 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 20:47:40,146 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 20:47:40,152 - RecyclingPrediction - ERROR - Training error: name 'target_encodings_path' is not defined
+2025-08-19 20:48:00,464 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:48:00,464 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:48:01,009 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:48:01,011 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:48:01,013 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:48:01,013 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:48:01,013 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:48:01,015 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:48:09,760 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:48:09,760 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:48:10,287 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:48:10,287 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:48:10,287 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:48:10,289 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:48:10,289 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:48:10,289 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:48:20,610 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:48:20,613 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:48:21,125 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:48:21,125 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:48:21,127 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:48:21,127 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:48:21,128 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:48:21,128 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:48:26,426 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 20:48:26,426 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 20:48:26,426 - RecyclingPrediction - ERROR - Training error: expected str, bytes or os.PathLike object, not DataFrame
+2025-08-19 20:48:45,332 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:48:45,332 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:48:45,876 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:48:45,878 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:48:45,878 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:48:45,878 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:48:45,878 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:48:45,878 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:49:27,115 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 20:49:27,115 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 20:49:27,120 - RecyclingPrediction - INFO - Creating hybrid features (is_training=True, target_encodings_path=src/datasets/processed/)...
+2025-08-19 20:49:27,134 - RecyclingPrediction - ERROR - Training error: [Errno 13] Permission denied: 'src/datasets/processed/'
+2025-08-19 20:49:39,455 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:49:39,464 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:49:39,988 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:49:39,990 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:49:39,990 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:49:39,990 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:49:39,990 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:49:39,992 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 20:49:40,780 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 20:49:40,780 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 20:49:40,784 - RecyclingPrediction - INFO - Creating hybrid features (is_training=True, target_encodings_path=None)...
+2025-08-19 20:49:40,838 - RecyclingPrediction - ERROR - Training error: expected str, bytes or os.PathLike object, not NoneType
+2025-08-19 20:50:02,841 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 20:50:02,841 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 20:50:03,354 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 20:50:03,354 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 20:50:03,354 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 20:50:03,356 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 20:50:03,356 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 20:50:03,356 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:00:57,303 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:00:57,303 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:00:57,872 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:00:57,872 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:00:57,874 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:00:57,874 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:00:57,874 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:00:57,874 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:01:02,007 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:01:02,016 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:01:02,543 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:01:02,543 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:01:02,545 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:01:02,545 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:01:02,545 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:01:02,545 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:01:10,184 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 21:01:10,184 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 21:01:10,184 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 21:01:10,184 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 21:01:10,212 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:01:10,268 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 21:01:15,820 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:01:15,824 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:01:16,374 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:01:16,374 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:01:16,376 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:01:16,376 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:01:16,376 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:01:16,376 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:01:43,638 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:01:43,640 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:01:44,214 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:01:44,215 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:01:44,215 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:01:44,216 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:01:44,216 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:01:44,216 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:01:48,263 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:01:48,267 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:01:48,773 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:01:48,775 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:01:48,775 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:01:48,775 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:01:48,775 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:01:48,775 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:01:54,631 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 21:01:54,631 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 21:01:54,637 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 21:01:54,637 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 21:01:54,654 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:01:54,665 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 21:01:57,582 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 21:01:58,237 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 21:01:58,294 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 21:01:58,294 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 21:02:00,643 - RecyclingPrediction - INFO - LightGBM R²: 0.7080
+2025-08-19 21:02:00,643 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 21:02:10,231 - RecyclingPrediction - INFO - XGBoost R²: 0.7626
+2025-08-19 21:02:10,231 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-19 21:02:26,492 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9775
+2025-08-19 21:02:26,826 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 21:02:26,828 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-19 21:02:26,830 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-19 21:02:27,825 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-19 21:02:27,825 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-19 21:02:27,825 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 21:02:27,825 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 21:02:27,825 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-19 21:02:28,158 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 21:02:28,423 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:02:28,438 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:02:28,454 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:02:28,454 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:02:28,454 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:02:28,479 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9775
+2025-08-19 21:02:33,641 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:02:33,643 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:02:34,248 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:02:34,248 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:02:34,248 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:02:34,250 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:02:34,250 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:02:34,250 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:03:27,967 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:03:27,967 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:03:28,510 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:03:28,510 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:03:28,510 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:03:28,512 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:03:28,512 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:03:28,512 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:03:47,326 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:03:47,326 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:03:47,830 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:03:47,832 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:03:47,832 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:03:47,832 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:03:47,832 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:03:47,832 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:03:51,860 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:03:51,860 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:03:52,311 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:03:52,313 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:03:52,313 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:03:52,313 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:03:52,315 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:03:52,315 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:03:58,849 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 21:03:58,851 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 21:03:58,853 - RecyclingPrediction - INFO - Creating hybrid features (is_training=True, target_encodings_path=datasets/processed/target_encodings.pkl)...
+2025-08-19 21:03:58,868 - RecyclingPrediction - INFO - Saved model to datasets/processed/target_encodings.pkl
+2025-08-19 21:03:58,870 - RecyclingPrediction - INFO - Saved target encodings to datasets/processed/target_encodings.pkl
+2025-08-19 21:03:58,870 - RecyclingPrediction - INFO - Confirmed target_encodings.pkl exists at datasets/processed/target_encodings.pkl
+2025-08-19 21:03:58,881 - RecyclingPrediction - INFO - Saved model to datasets/processed/target_encodings.pkl
+2025-08-19 21:03:58,882 - RecyclingPrediction - INFO - Saved updated target encodings with stats to datasets/processed/target_encodings.pkl
+2025-08-19 21:03:58,883 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:03:58,883 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 21:04:02,071 - RecyclingPrediction - INFO - Saved data to datasets/processed/augmented_data.csv
+2025-08-19 21:04:02,071 - RecyclingPrediction - INFO - Saved processed data to datasets/processed/augmented_data.csv
+2025-08-19 21:04:02,538 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 21:04:02,538 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 21:04:02,538 - RecyclingPrediction - INFO - Building hybrid models...
+2025-08-19 21:04:02,538 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 21:04:02,732 - RecyclingPrediction - INFO - XGBoost R²: 0.6552
+2025-08-19 21:04:02,732 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 21:04:02,908 - RecyclingPrediction - INFO - LightGBM R²: 0.5668
+2025-08-19 21:04:02,908 - RecyclingPrediction - INFO - Training RandomForest...
+2025-08-19 21:04:04,111 - RecyclingPrediction - INFO - RandomForest R²: 0.6273
+2025-08-19 21:04:04,136 - RecyclingPrediction - ERROR - Training error: XGBModel.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2025-08-19 21:04:52,517 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:04:52,520 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:04:53,012 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:04:53,027 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:04:53,037 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:04:53,037 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:04:53,039 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:04:53,039 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:05:19,467 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:05:19,467 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:05:19,922 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:05:19,922 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:05:19,924 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:05:19,924 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:05:19,924 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:05:19,924 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:05:52,912 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:05:52,912 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:05:53,418 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:05:53,420 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:05:53,420 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:05:53,420 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:05:53,420 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:05:53,420 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:07:09,911 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:07:09,911 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:07:10,393 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:07:10,395 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:07:10,395 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:07:10,395 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:07:10,395 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:07:10,395 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:07:16,338 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:07:16,338 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:07:16,925 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:07:16,927 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:07:16,927 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:07:16,927 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:07:16,927 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:07:16,927 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:08:38,548 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:08:38,556 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:08:39,058 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:08:39,058 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:08:39,058 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:08:39,058 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:08:39,061 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:08:39,061 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:08:46,297 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 21:08:48,155 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 21:08:48,155 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 21:08:48,155 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 21:08:48,164 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 21:08:48,182 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:08:48,190 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 21:08:51,443 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 21:08:52,040 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 21:08:52,084 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 21:08:52,085 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 21:08:54,063 - RecyclingPrediction - INFO - LightGBM R²: 0.6976
+2025-08-19 21:08:54,063 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 21:09:01,502 - RecyclingPrediction - INFO - XGBoost R²: 0.7600
+2025-08-19 21:09:01,502 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-19 21:09:14,702 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9761
+2025-08-19 21:09:14,991 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 21:09:14,996 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-19 21:09:14,996 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-19 21:09:15,722 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-19 21:09:15,724 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-19 21:09:15,725 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 21:09:15,725 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 21:09:15,725 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-19 21:09:16,027 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 21:09:16,266 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:09:16,276 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:09:16,288 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:09:16,288 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:09:16,288 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:09:16,312 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9761
+2025-08-19 21:11:58,814 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:11:58,814 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:11:59,322 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:11:59,322 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:11:59,324 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:11:59,324 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:11:59,324 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:11:59,324 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:12:26,926 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 21:12:26,934 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 21:12:26,942 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 21:12:26,942 - RecyclingPrediction - ERROR - Single instance prediction failed: create_hybrid_features() got an unexpected keyword argument 'target_encodings_path'
+2025-08-19 21:12:26,942 - RecyclingPrediction - ERROR - Prediction error: create_hybrid_features() got an unexpected keyword argument 'target_encodings_path'
+2025-08-19 21:22:48,460 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:22:48,460 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:22:48,957 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:22:48,957 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:22:48,957 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:22:48,957 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:22:48,957 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:22:48,957 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:23:05,769 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 21:23:05,780 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 21:23:05,780 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 21:23:05,780 - RecyclingPrediction - ERROR - Single instance prediction failed: create_hybrid_features() got an unexpected keyword argument 'target_encodings_path'
+2025-08-19 21:23:05,780 - RecyclingPrediction - ERROR - Prediction error: create_hybrid_features() got an unexpected keyword argument 'target_encodings_path'
+2025-08-19 21:23:08,049 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 21:23:37,413 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:23:37,413 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:23:37,907 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:23:37,909 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:23:37,909 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:23:37,909 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:23:37,909 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:23:37,909 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:23:41,719 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:23:41,719 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:23:42,239 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:23:42,239 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:23:42,239 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:23:42,239 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:23:42,239 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:23:42,239 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:23:42,285 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 21:24:11,012 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 21:24:11,022 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 21:24:11,022 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 21:24:11,022 - RecyclingPrediction - ERROR - Single instance prediction failed: create_hybrid_features() got an unexpected keyword argument 'target_encodings_path'
+2025-08-19 21:24:11,022 - RecyclingPrediction - ERROR - Prediction error: create_hybrid_features() got an unexpected keyword argument 'target_encodings_path'
+2025-08-19 21:26:36,959 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:26:36,959 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:26:37,465 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:26:37,467 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:26:37,467 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:26:37,467 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:26:37,467 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:26:37,467 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:37:09,245 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:37:09,246 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:37:09,780 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:37:09,780 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:37:09,780 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:37:09,780 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:37:09,794 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:37:09,794 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:37:09,794 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:37:16,315 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 21:37:33,850 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 21:37:33,865 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 21:37:33,865 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 21:37:33,865 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 21:37:33,890 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:37:33,894 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 35)
+2025-08-19 21:37:33,894 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-19 21:37:33,894 - RecyclingPrediction - ERROR - Prediction failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- Landfill Capacity (Tons)
+- Year
+
+2025-08-19 21:37:33,894 - RecyclingPrediction - ERROR - Single instance prediction failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- Landfill Capacity (Tons)
+- Year
+
+2025-08-19 21:37:33,894 - RecyclingPrediction - ERROR - Prediction error: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- Landfill Capacity (Tons)
+- Year
+
+2025-08-19 21:44:36,790 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:44:36,798 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:44:37,374 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:44:37,376 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:44:37,376 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:44:37,376 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:44:37,378 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:44:37,378 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:44:37,378 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:44:43,127 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:44:43,130 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:44:43,654 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:44:43,656 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:44:43,656 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:44:43,656 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:44:43,656 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:44:43,656 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:44:43,658 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:44:47,893 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:44:47,894 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:44:48,390 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:44:48,392 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:44:48,392 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:44:48,392 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:44:48,392 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:44:48,392 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:44:48,392 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:44:50,074 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 21:44:52,653 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 21:44:52,660 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 21:44:52,662 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 21:44:52,662 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 21:44:52,683 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:44:52,694 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 21:44:55,841 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 21:44:56,505 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 21:44:56,550 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 21:44:56,550 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 21:44:58,462 - RecyclingPrediction - INFO - LightGBM R²: 0.6831
+2025-08-19 21:44:58,462 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 21:45:05,830 - RecyclingPrediction - INFO - XGBoost R²: 0.7499
+2025-08-19 21:45:05,830 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-19 21:45:18,736 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9740
+2025-08-19 21:45:19,032 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 21:45:19,037 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-19 21:45:19,037 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-19 21:45:19,750 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-19 21:45:19,750 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-19 21:45:19,754 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 21:45:19,754 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 21:45:19,754 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-19 21:45:20,067 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 21:45:20,314 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:45:20,328 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:45:20,338 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:45:20,344 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:45:20,344 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:45:20,344 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:45:20,388 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9740
+2025-08-19 21:46:13,513 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 21:46:13,522 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 21:46:13,522 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 21:46:13,522 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 21:46:13,550 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:46:13,550 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-19 21:46:13,550 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-19 21:46:13,554 - RecyclingPrediction - ERROR - Prediction failed: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2025-08-19 21:46:13,554 - RecyclingPrediction - ERROR - Single instance prediction failed: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2025-08-19 21:46:13,554 - RecyclingPrediction - ERROR - Prediction error: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2025-08-19 21:49:32,565 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:49:32,565 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:49:33,120 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:49:33,120 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:49:33,120 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:49:33,122 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:49:33,122 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:49:33,122 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:49:33,122 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:49:40,110 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:49:40,110 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:49:40,642 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:49:40,642 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:49:40,644 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:49:40,645 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:49:40,645 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:49:40,646 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:49:40,646 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:49:47,049 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:49:47,049 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:49:47,518 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:49:47,520 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:49:47,520 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:49:47,520 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:49:47,520 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:49:47,520 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:49:47,520 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:49:55,093 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:49:55,095 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:49:55,643 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:49:55,645 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:49:55,645 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:49:55,645 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:49:55,645 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:49:55,645 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:49:55,645 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:50:23,807 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:50:23,808 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:50:24,346 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:50:24,346 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:50:24,346 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:50:24,348 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:50:24,348 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:50:24,348 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:50:24,348 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:50:28,359 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:50:28,359 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:50:28,840 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:50:28,843 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:50:28,843 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:50:28,843 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:50:28,843 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:50:28,843 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:50:28,845 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:50:28,889 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 21:50:32,077 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 21:50:32,077 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 21:50:32,081 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 21:50:32,081 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 21:50:32,095 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:50:32,105 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 21:50:35,337 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 21:50:36,152 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 21:50:36,187 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 21:50:36,187 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 21:50:38,105 - RecyclingPrediction - INFO - LightGBM R²: 0.6638
+2025-08-19 21:50:38,105 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 21:50:45,670 - RecyclingPrediction - INFO - XGBoost R²: 0.7220
+2025-08-19 21:50:45,670 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-19 21:50:59,686 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9721
+2025-08-19 21:50:59,935 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 21:50:59,939 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-19 21:50:59,940 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-19 21:51:00,660 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-19 21:51:00,665 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-19 21:51:00,665 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 21:51:00,665 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 21:51:00,665 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-19 21:51:00,934 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 21:51:01,144 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:51:01,156 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:51:01,167 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:51:01,169 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:51:01,169 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:51:01,169 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:51:01,191 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9721
+2025-08-19 21:57:02,560 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:57:02,561 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:57:03,031 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:57:03,032 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:57:03,032 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:57:03,032 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:57:03,033 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:57:03,033 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:57:03,033 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:58:30,354 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:58:30,355 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:58:30,849 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:58:30,851 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:58:30,851 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:58:30,852 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:58:30,852 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:58:30,852 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:58:30,853 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:58:45,714 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:58:45,715 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:58:46,261 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:58:46,263 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:58:46,263 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:58:46,263 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:58:46,264 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:58:46,264 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:58:46,264 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:59:23,062 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:59:23,064 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:59:23,657 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:59:23,657 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:59:23,657 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:59:23,658 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:59:23,658 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:59:23,659 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:59:23,659 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:59:38,703 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:59:38,704 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:59:39,184 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:59:39,184 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:59:39,185 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:59:39,185 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:59:39,185 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:59:39,185 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:59:39,186 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:59:42,769 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 21:59:42,771 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 21:59:43,214 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 21:59:43,214 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 21:59:43,215 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 21:59:43,215 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 21:59:43,215 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 21:59:43,215 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 21:59:43,216 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 21:59:52,598 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 21:59:57,394 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 21:59:57,394 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 21:59:57,398 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 21:59:57,399 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 21:59:57,417 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 21:59:57,424 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 22:00:00,497 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 22:00:01,187 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 22:00:01,217 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 22:00:01,217 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 22:00:03,366 - RecyclingPrediction - INFO - LightGBM R²: 0.6918
+2025-08-19 22:00:03,366 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 22:00:11,015 - RecyclingPrediction - INFO - XGBoost R²: 0.7708
+2025-08-19 22:00:11,015 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-19 22:00:23,723 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9790
+2025-08-19 22:00:23,974 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 22:00:23,976 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-19 22:00:23,977 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-19 22:00:24,637 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-19 22:00:24,638 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-19 22:00:24,638 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-19 22:00:24,640 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-19 22:00:24,642 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-19 22:00:24,886 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-19 22:00:25,078 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 22:00:25,088 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 22:00:25,098 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 22:00:25,099 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 22:00:25,099 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 22:00:25,099 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 22:00:25,119 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9790
+2025-08-19 22:00:44,778 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 22:00:44,783 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 22:00:44,783 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 22:00:44,783 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 22:00:44,794 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 22:00:44,795 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-19 22:00:44,797 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-19 22:00:44,873 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-19 22:00:44,873 - RecyclingPrediction - INFO - Single instance prediction completed: 46.57%
+2025-08-19 22:00:44,873 - RecyclingPrediction - INFO - Prediction successful: 46.57%
+2025-08-19 22:00:44,896 - RecyclingPrediction - ERROR - Prediction error: type str doesn't define __round__ method
+2025-08-19 22:00:49,817 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 22:00:49,818 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 22:00:50,280 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 22:00:50,280 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 22:00:50,281 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 22:00:50,281 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 22:00:50,281 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 22:00:50,281 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 22:00:50,281 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 22:08:34,675 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 22:22:04,268 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 22:22:04,280 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 22:22:04,280 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 22:22:04,281 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 22:22:04,297 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 22:22:04,298 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-19 22:22:04,302 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-19 22:22:04,398 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-19 22:22:04,399 - RecyclingPrediction - INFO - Single instance prediction completed: 69.69%
+2025-08-19 22:22:04,399 - RecyclingPrediction - INFO - Prediction successful: 69.69%
+2025-08-19 22:22:09,266 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 22:22:09,266 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 22:22:09,728 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 22:22:09,730 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 22:22:09,730 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 22:22:09,730 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 22:22:09,730 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 22:22:09,730 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 22:22:09,730 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 22:22:26,237 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 22:22:26,245 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 22:22:26,247 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 22:22:26,247 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 22:22:26,254 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 22:22:26,254 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-19 22:22:26,264 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-19 22:22:26,339 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-19 22:22:26,340 - RecyclingPrediction - INFO - Single instance prediction completed: 59.07%
+2025-08-19 22:22:26,340 - RecyclingPrediction - INFO - Prediction successful: 59.07%
+2025-08-19 22:24:09,998 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 22:24:10,002 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 22:24:10,003 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 22:24:10,003 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 22:24:10,014 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 22:24:10,015 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-19 22:24:10,018 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-19 22:24:10,086 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-19 22:24:10,087 - RecyclingPrediction - INFO - Single instance prediction completed: 59.07%
+2025-08-19 22:24:10,087 - RecyclingPrediction - INFO - Prediction successful: 59.07%
+2025-08-19 22:59:39,733 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 23:04:27,941 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 23:04:27,941 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 23:04:28,438 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 23:04:28,440 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 23:04:28,441 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 23:04:28,441 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 23:04:28,441 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 23:04:28,441 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 23:04:28,441 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 23:05:16,431 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 23:05:16,431 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 23:05:16,949 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 23:05:16,949 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 23:05:16,951 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 23:05:16,951 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 23:05:16,951 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 23:05:16,951 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 23:05:16,951 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 23:11:49,361 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 23:11:49,361 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 23:11:49,833 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 23:11:49,833 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 23:11:49,833 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 23:11:49,835 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 23:11:49,835 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 23:11:49,835 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 23:11:49,835 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 23:11:53,221 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 23:11:53,231 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 23:11:53,639 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 23:11:53,641 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 23:11:53,641 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 23:11:53,641 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 23:11:53,641 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 23:11:53,641 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 23:11:53,641 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 23:32:38,427 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 23:35:23,324 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 23:35:35,376 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 23:35:35,376 - RecyclingPrediction - ERROR - Prediction error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-08-19 23:43:14,347 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 23:43:27,403 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 23:43:27,403 - RecyclingPrediction - ERROR - Prediction error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-08-19 23:44:38,717 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 23:44:55,783 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 23:44:55,783 - RecyclingPrediction - ERROR - Prediction error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-08-19 23:49:52,262 - RecyclingPrediction - INFO - Accessing home page
+2025-08-19 23:50:02,368 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 23:50:02,368 - RecyclingPrediction - ERROR - Prediction error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-08-19 23:50:16,585 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 23:50:16,585 - RecyclingPrediction - ERROR - Prediction error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-08-19 23:50:17,606 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 23:50:17,606 - RecyclingPrediction - ERROR - Prediction error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-08-19 23:50:20,434 - RecyclingPrediction - INFO - Starting training pipeline
+2025-08-19 23:50:20,434 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 23:50:20,450 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 23:50:20,450 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 23:50:20,488 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 23:50:20,503 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 23:50:26,173 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 23:50:26,173 - RecyclingPrediction - INFO - Starting Flask app
+2025-08-19 23:50:26,701 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 23:50:26,703 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 23:50:26,703 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 23:50:26,703 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 23:50:26,703 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 23:50:26,703 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 23:50:26,703 - RecyclingPrediction - INFO - Model artifacts loaded successfully
+2025-08-19 23:50:46,395 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 23:50:46,395 - RecyclingPrediction - ERROR - Prediction error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-08-19 23:50:51,275 - RecyclingPrediction - INFO - Processing prediction request
+2025-08-19 23:50:51,275 - RecyclingPrediction - ERROR - Prediction error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-08-19 23:57:13,153 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 23:57:13,668 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 23:57:13,668 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 23:57:13,670 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 23:57:13,670 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 23:57:13,670 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 23:57:13,670 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 23:57:13,670 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-19 23:57:55,477 - RecyclingPrediction - INFO - POST /predict
+2025-08-19 23:57:55,481 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 23:57:55,483 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 23:57:55,484 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 23:57:55,484 - RecyclingPrediction - ERROR - Single instance prediction failed: 'Landfill Location (Lat, Long)'
+2025-08-19 23:57:55,484 - RecyclingPrediction - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Landfill Location (Lat, Long)'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\app.py", line 211, in predict_route
+    pred = predict_single_instance(data, config, artifacts)  # percent (e.g., 57.05)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 214, in predict_single_instance
+    X_processed, feature_cols = preprocess_for_prediction(df, artifacts)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 118, in preprocess_for_prediction
+    df_processed = apply_feature_engineering(df, artifacts['target_encodings'])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 52, in apply_feature_engineering
+    coords = df_processed['Landfill Location (Lat, Long)'].str.split(',', expand=True)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Landfill Location (Lat, Long)'
+2025-08-19 23:58:01,134 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 23:58:01,606 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 23:58:01,608 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 23:58:01,608 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 23:58:01,608 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 23:58:01,609 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 23:58:01,609 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 23:58:01,609 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-19 23:58:10,113 - RecyclingPrediction - INFO - POST /predict
+2025-08-19 23:58:10,129 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 23:58:10,130 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 23:58:10,130 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 23:58:10,131 - RecyclingPrediction - ERROR - Single instance prediction failed: 'Landfill Location (Lat, Long)'
+2025-08-19 23:58:10,131 - RecyclingPrediction - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Landfill Location (Lat, Long)'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\app.py", line 211, in predict_route
+    pred = predict_single_instance(data, config, artifacts)  # percent (e.g., 57.05)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 214, in predict_single_instance
+    X_processed, feature_cols = preprocess_for_prediction(df, artifacts)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 118, in preprocess_for_prediction
+    df_processed = apply_feature_engineering(df, artifacts['target_encodings'])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 52, in apply_feature_engineering
+    coords = df_processed['Landfill Location (Lat, Long)'].str.split(',', expand=True)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Landfill Location (Lat, Long)'
+2025-08-19 23:59:27,775 - RecyclingPrediction - INFO - POST /predict
+2025-08-19 23:59:27,777 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-19 23:59:27,777 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-19 23:59:27,777 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-19 23:59:27,793 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 23:59:27,793 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-19 23:59:27,793 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-19 23:59:27,877 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-19 23:59:27,877 - RecyclingPrediction - INFO - Single instance prediction completed: 58.27%
+2025-08-19 23:59:27,877 - RecyclingPrediction - INFO - Prediction: 58.27%
+2025-08-19 23:59:33,117 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-19 23:59:33,605 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-19 23:59:33,605 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-19 23:59:33,605 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-19 23:59:33,605 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-19 23:59:33,605 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-19 23:59:33,608 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-19 23:59:33,608 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-19 23:59:35,444 - RecyclingPrediction - INFO - POST /train
+2025-08-19 23:59:35,444 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-19 23:59:35,446 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-19 23:59:35,446 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-19 23:59:35,467 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-19 23:59:35,475 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-19 23:59:38,493 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-19 23:59:39,113 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-19 23:59:39,161 - RecyclingPrediction - INFO - Starting model training...
+2025-08-19 23:59:39,161 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-19 23:59:41,319 - RecyclingPrediction - INFO - LightGBM R²: 0.6838
+2025-08-19 23:59:41,319 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-19 23:59:48,542 - RecyclingPrediction - INFO - XGBoost R²: 0.7446
+2025-08-19 23:59:48,542 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-20 00:00:01,345 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9651
+2025-08-20 00:00:01,585 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 00:00:01,587 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-20 00:00:01,589 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-20 00:00:02,513 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-20 00:00:02,523 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-20 00:00:02,523 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-20 00:00:02,523 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-20 00:00:02,759 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 00:00:02,759 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-20 00:00:02,948 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:00:02,959 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:00:02,969 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:00:02,971 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:00:02,971 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:00:02,971 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:00:02,991 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:00:02,991 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9651
+2025-08-20 00:00:08,045 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:00:08,543 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:00:08,543 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:00:08,543 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:00:08,543 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:00:08,545 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:00:08,545 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:00:08,545 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:13:13,737 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:13:14,236 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:13:14,236 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:13:14,236 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:13:14,236 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:13:14,236 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:13:14,236 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:13:14,236 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:13:18,053 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:13:18,533 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:13:18,533 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:13:18,533 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:13:18,535 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:13:18,535 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:13:18,535 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:13:18,535 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:16:03,336 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:16:03,873 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:16:03,873 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:16:03,873 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:16:03,873 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:16:03,873 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:16:03,875 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:16:03,875 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:16:07,724 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:16:08,194 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:16:08,194 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:16:08,194 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:16:08,194 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:16:08,196 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:16:08,196 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:16:08,196 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:16:14,804 - RecyclingPrediction - INFO - POST /predict
+2025-08-20 00:16:14,807 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-20 00:16:14,807 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-20 00:16:14,807 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-20 00:16:14,807 - RecyclingPrediction - ERROR - Single instance prediction failed: could not convert string to float: ''
+2025-08-20 00:16:14,807 - RecyclingPrediction - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\app.py", line 211, in predict_route
+    pred = predict_single_instance(data, config, artifacts)  # percent (e.g., 57.05)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 214, in predict_single_instance
+    X_processed, feature_cols = preprocess_for_prediction(df, artifacts)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 118, in preprocess_for_prediction
+    df_processed = apply_feature_engineering(df, artifacts['target_encodings'])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\Desktop\PW-Projects\waste\src\pipelines\prediction_pipelines.py", line 53, in apply_feature_engineering
+    df_processed['Landfill_Lat'] = coords[0].astype(float)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\generic.py", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\internals\managers.py", line 430, in astype
+    return self.apply(
+           ^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\internals\managers.py", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\internals\blocks.py", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\dtypes\astype.py", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\dtypes\astype.py", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drsnc\anaconda3\Lib\site-packages\pandas\core\dtypes\astype.py", line 133, in _astype_nansafe
+    return arr.astype(dtype, copy=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2025-08-20 00:16:20,104 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:16:20,624 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:16:20,624 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:16:20,625 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:16:20,625 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:16:20,627 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:16:20,627 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:16:20,627 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:16:20,670 - RecyclingPrediction - INFO - POST /predict
+2025-08-20 00:16:20,677 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-20 00:16:20,680 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-20 00:16:20,680 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-20 00:16:20,696 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 00:16:20,698 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-20 00:16:20,700 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-20 00:16:20,767 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-20 00:16:20,767 - RecyclingPrediction - INFO - Single instance prediction completed: 65.28%
+2025-08-20 00:16:20,772 - RecyclingPrediction - INFO - Prediction: 65.28%
+2025-08-20 00:17:00,509 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:17:01,101 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:17:01,103 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:17:01,103 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:17:01,104 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:17:01,104 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:17:01,104 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:17:01,104 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:17:04,863 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:17:05,309 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:17:05,311 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:17:05,311 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:17:05,311 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:17:05,311 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:17:05,311 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:17:05,311 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:17:15,236 - RecyclingPrediction - INFO - POST /predict
+2025-08-20 00:17:15,236 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-20 00:17:15,236 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-20 00:17:15,236 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-20 00:17:15,256 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 00:17:15,256 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-20 00:17:15,262 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-20 00:17:15,339 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-20 00:17:15,339 - RecyclingPrediction - INFO - Single instance prediction completed: 65.28%
+2025-08-20 00:17:15,339 - RecyclingPrediction - INFO - Prediction: 65.28%
+2025-08-20 00:24:22,674 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:24:23,176 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:24:23,176 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:24:23,176 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:24:23,176 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:24:23,176 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:24:23,176 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:24:23,176 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:24:27,067 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:24:27,540 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:24:27,540 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:24:27,540 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:24:27,540 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:24:27,542 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:24:27,542 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:24:27,542 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 00:29:31,890 - RecyclingPrediction - INFO - POST /predict
+2025-08-20 00:29:31,894 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-20 00:29:31,894 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-20 00:29:31,894 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-20 00:29:31,911 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 00:29:31,911 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-20 00:29:31,914 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-20 00:29:31,987 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-20 00:29:31,994 - RecyclingPrediction - INFO - Single instance prediction completed: 52.64%
+2025-08-20 00:29:31,994 - RecyclingPrediction - INFO - Prediction: 52.64%
+2025-08-20 00:29:33,996 - RecyclingPrediction - INFO - POST /train
+2025-08-20 00:29:33,996 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-20 00:29:33,998 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-20 00:29:33,998 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-20 00:29:34,014 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 00:29:34,022 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-20 00:29:39,634 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 00:29:40,151 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 00:29:40,151 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 00:29:40,151 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 00:29:40,151 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 00:29:40,151 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 00:29:40,153 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 00:29:40,153 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 09:24:50,346 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 09:24:51,957 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 09:24:51,959 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 09:24:51,961 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 09:24:51,962 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 09:24:51,962 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 09:24:51,962 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 09:24:51,962 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 09:24:55,985 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 09:24:56,420 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 09:24:56,420 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 09:24:56,422 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 09:24:56,422 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 09:24:56,422 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 09:24:56,422 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 09:24:56,422 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 09:28:25,398 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 09:28:25,900 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 09:28:25,901 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 09:28:25,901 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 09:28:25,901 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 09:28:25,902 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 09:28:25,902 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 09:28:25,902 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 09:28:29,617 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 09:28:30,061 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 09:28:30,062 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 09:28:30,062 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 09:28:30,062 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 09:28:30,063 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 09:28:30,063 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 09:28:30,064 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 10:38:49,953 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 10:38:50,551 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 10:38:50,563 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 10:38:50,565 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 10:38:50,567 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 10:38:50,568 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 10:38:50,569 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 10:38:50,569 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 10:38:54,249 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 10:38:54,849 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 10:38:54,849 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 10:38:54,850 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 10:38:54,850 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 10:38:54,850 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 10:38:54,850 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 10:38:54,850 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 10:43:01,946 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 10:43:02,425 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 10:43:02,426 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 10:43:02,426 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 10:43:02,426 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 10:43:02,427 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 10:43:02,427 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 10:43:02,427 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 10:43:05,863 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 10:43:06,323 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 10:43:06,323 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 10:43:06,324 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 10:43:06,324 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 10:43:06,324 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 10:43:06,324 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 10:43:06,325 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 10:49:51,157 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 10:49:51,641 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 10:49:51,642 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 10:49:51,642 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 10:49:51,643 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 10:49:51,643 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 10:49:51,643 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 10:49:51,643 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 10:50:03,576 - RecyclingPrediction - INFO - POST /predict
+2025-08-20 10:50:03,576 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-20 10:50:03,591 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-20 10:50:03,591 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-20 10:50:03,623 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 10:50:03,625 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-20 10:50:03,641 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-20 10:50:03,725 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-20 10:50:03,726 - RecyclingPrediction - INFO - Single instance prediction completed: 52.64%
+2025-08-20 10:50:03,726 - RecyclingPrediction - INFO - Prediction: 52.64%
+2025-08-20 10:50:08,404 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 10:50:08,857 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 10:50:08,859 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 10:50:08,859 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 10:50:08,859 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 10:50:08,859 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 10:50:08,859 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 10:50:08,859 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 12:01:23,682 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 12:01:24,239 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 12:01:24,240 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 12:01:24,241 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 12:01:24,241 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 12:01:24,242 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 12:01:24,242 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 12:01:24,242 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 13:54:45,137 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 13:54:45,661 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 13:54:45,662 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 13:54:45,662 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 13:54:45,664 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 13:54:45,664 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 13:54:45,664 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 13:54:45,664 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 13:54:53,052 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 13:54:53,588 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 13:54:53,588 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 13:54:53,590 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 13:54:53,590 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 13:54:53,590 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 13:54:53,590 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 13:54:53,590 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 13:55:38,107 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 14:06:25,782 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 14:06:26,285 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:06:26,285 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:06:26,285 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:06:26,287 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:06:26,287 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:06:26,287 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:06:26,287 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:06:30,136 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 14:06:30,720 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:06:30,720 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:06:30,720 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:06:30,722 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:06:30,722 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:06:30,722 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:06:30,722 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:06:46,860 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 14:06:47,350 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:06:47,350 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:06:47,350 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:06:47,350 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:06:47,350 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:06:47,352 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:06:47,352 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:07:21,016 - RecyclingPrediction - INFO - POST /predict
+2025-08-20 14:07:21,023 - RecyclingPrediction - INFO - Predicting for single instance...
+2025-08-20 14:07:21,029 - RecyclingPrediction - INFO - Preprocessing data for prediction...
+2025-08-20 14:07:21,029 - RecyclingPrediction - INFO - Applying feature engineering for prediction...
+2025-08-20 14:07:21,069 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 14:07:21,069 - RecyclingPrediction - INFO - Preprocessed data shape: (1, 37)
+2025-08-20 14:07:21,069 - RecyclingPrediction - INFO - Making predictions with model: Stacking Ensemble
+2025-08-20 14:07:21,168 - RecyclingPrediction - INFO - Predictions completed. Shape: (1,)
+2025-08-20 14:07:21,172 - RecyclingPrediction - INFO - Single instance prediction completed: 59.47%
+2025-08-20 14:07:21,172 - RecyclingPrediction - INFO - Prediction: 59.47%
+2025-08-20 14:07:26,241 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 14:07:26,765 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:07:26,767 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:07:26,767 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:07:26,767 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:07:26,767 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:07:26,769 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:07:26,769 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:07:51,940 - RecyclingPrediction - INFO - POST /train
+2025-08-20 14:07:51,948 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-20 14:07:51,976 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-20 14:07:51,976 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-20 14:07:52,008 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 14:07:52,015 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-20 14:07:57,200 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 14:07:57,731 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:07:57,733 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:07:57,733 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:07:57,733 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:07:57,733 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:07:57,733 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:07:57,735 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:07:57,788 - RecyclingPrediction - INFO - POST /train
+2025-08-20 14:07:57,788 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-20 14:07:57,797 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-20 14:07:57,797 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-20 14:07:57,821 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 14:07:57,830 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-20 14:08:00,934 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-20 14:08:01,530 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-20 14:08:01,578 - RecyclingPrediction - INFO - Starting model training...
+2025-08-20 14:08:01,578 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-20 14:08:03,184 - RecyclingPrediction - INFO - LightGBM R²: 0.6477
+2025-08-20 14:08:03,184 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-20 14:08:10,707 - RecyclingPrediction - INFO - XGBoost R²: 0.7364
+2025-08-20 14:08:10,707 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-20 14:08:25,262 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 14:08:25,773 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:08:25,775 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:08:25,775 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:08:25,775 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:08:25,775 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:08:25,775 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:08:25,775 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:08:42,857 - RecyclingPrediction - INFO - POST /train
+2025-08-20 14:08:42,857 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-20 14:08:42,857 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-20 14:08:42,857 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-20 14:08:42,872 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 14:08:42,888 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-20 14:08:45,992 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-20 14:08:46,573 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-20 14:08:46,614 - RecyclingPrediction - INFO - Starting model training...
+2025-08-20 14:08:46,614 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-20 14:08:48,320 - RecyclingPrediction - INFO - LightGBM R²: 0.6979
+2025-08-20 14:08:48,321 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-20 14:08:55,535 - RecyclingPrediction - INFO - XGBoost R²: 0.7503
+2025-08-20 14:08:55,535 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-20 14:09:08,227 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9724
+2025-08-20 14:09:08,475 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 14:09:08,479 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-20 14:09:08,479 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-20 14:09:09,329 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-20 14:09:09,334 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-20 14:09:09,334 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-20 14:09:09,334 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-20 14:09:09,571 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 14:09:09,573 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-20 14:09:09,762 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:09:09,772 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:09:09,786 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:09:09,788 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:09:09,788 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:09:09,788 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:09:09,810 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:09:09,810 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9724
+2025-08-20 14:26:06,927 - RecyclingPrediction - INFO - POST /train
+2025-08-20 14:26:06,927 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-20 14:26:06,945 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-20 14:26:06,945 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-20 14:26:06,965 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 14:26:06,968 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-20 14:26:09,837 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-20 14:26:10,409 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-20 14:26:10,456 - RecyclingPrediction - INFO - Starting model training...
+2025-08-20 14:26:10,456 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-20 14:26:12,023 - RecyclingPrediction - INFO - LightGBM R²: 0.6515
+2025-08-20 14:26:12,023 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-20 14:26:19,639 - RecyclingPrediction - INFO - XGBoost R²: 0.7004
+2025-08-20 14:26:19,639 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-20 14:26:32,216 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9665
+2025-08-20 14:26:32,460 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 14:26:32,464 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-20 14:26:32,464 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-20 14:26:33,016 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-20 14:26:33,016 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-20 14:26:33,016 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-20 14:26:33,016 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-20 14:26:33,343 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 14:26:33,343 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-20 14:26:33,547 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:26:33,559 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:26:33,571 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:26:33,571 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:26:33,571 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:26:33,571 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:26:33,598 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:26:33,598 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9665
+2025-08-20 14:46:08,359 - RecyclingPrediction - INFO - Loaded configuration from src/config/config.yaml
+2025-08-20 14:46:08,860 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:46:08,861 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:46:08,862 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:46:08,862 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:46:08,862 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:46:08,863 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:46:08,863 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:46:38,389 - RecyclingPrediction - INFO - POST /train
+2025-08-20 14:46:38,389 - RecyclingPrediction - INFO - Initializing training process...
+2025-08-20 14:46:38,389 - RecyclingPrediction - INFO - Loading and preprocessing data...
+2025-08-20 14:46:38,389 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-20 14:46:38,404 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-20 14:46:38,404 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-20 14:46:38,422 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 14:46:38,422 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-20 14:46:41,292 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-20 14:46:41,891 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-20 14:46:41,892 - RecyclingPrediction - INFO - Data loaded: 2720 training samples, 680 test samples
+2025-08-20 14:46:41,892 - RecyclingPrediction - INFO - Preparing full dataset for hybrid model...
+2025-08-20 14:46:41,918 - RecyclingPrediction - INFO - Training hybrid model...
+2025-08-20 14:46:41,918 - RecyclingPrediction - INFO - Starting model training...
+2025-08-20 14:46:41,918 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-20 14:46:43,591 - RecyclingPrediction - INFO - LightGBM R²: 0.6840
+2025-08-20 14:46:43,591 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-20 14:46:50,998 - RecyclingPrediction - INFO - XGBoost R²: 0.7393
+2025-08-20 14:46:50,998 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-20 14:47:03,918 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9781
+2025-08-20 14:47:04,173 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 14:47:04,177 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-20 14:47:04,177 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-20 14:47:05,244 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-20 14:47:05,245 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-20 14:47:05,245 - RecyclingPrediction - INFO - Model trained: Stacking Ensemble, R²: 0.9781
+2025-08-20 14:47:05,245 - RecyclingPrediction - INFO - Saving model artifacts...
+2025-08-20 14:47:05,247 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-20 14:47:05,249 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-20 14:47:05,558 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 14:47:05,560 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-20 14:47:05,560 - RecyclingPrediction - INFO - Reloading artifacts...
+2025-08-20 14:47:05,806 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:47:05,822 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:47:05,833 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:47:05,835 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:47:05,835 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:47:05,835 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:47:05,857 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:47:05,858 - RecyclingPrediction - INFO - Training completed successfully
+2025-08-20 14:47:05,858 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9781
+2025-08-20 14:54:07,218 - RecyclingPrediction - INFO - POST /train
+2025-08-20 14:54:07,218 - RecyclingPrediction - INFO - Initializing training process...
+2025-08-20 14:54:07,218 - RecyclingPrediction - INFO - Loading and preprocessing data...
+2025-08-20 14:54:07,218 - RecyclingPrediction - INFO - Starting data preprocessing...
+2025-08-20 14:54:07,224 - RecyclingPrediction - INFO - Original dataset shape: (850, 13)
+2025-08-20 14:54:07,225 - RecyclingPrediction - INFO - Creating hybrid features...
+2025-08-20 14:54:07,245 - RecyclingPrediction - INFO - Feature engineering completed
+2025-08-20 14:54:07,248 - RecyclingPrediction - INFO - Augmenting data...
+2025-08-20 14:54:10,162 - RecyclingPrediction - INFO - Augmented dataset size: 3400 (from 850)
+2025-08-20 14:54:10,752 - RecyclingPrediction - INFO - Training set shape: (2720, 37), Test set shape: (680, 37)
+2025-08-20 14:54:10,768 - RecyclingPrediction - INFO - Data loaded: 2720 training samples, 680 test samples
+2025-08-20 14:54:10,768 - RecyclingPrediction - INFO - Preparing full dataset for hybrid model...
+2025-08-20 14:54:10,800 - RecyclingPrediction - INFO - Training hybrid model...
+2025-08-20 14:54:10,800 - RecyclingPrediction - INFO - Starting model training...
+2025-08-20 14:54:10,800 - RecyclingPrediction - INFO - Training LightGBM...
+2025-08-20 14:54:12,346 - RecyclingPrediction - INFO - LightGBM R²: 0.6628
+2025-08-20 14:54:12,346 - RecyclingPrediction - INFO - Training XGBoost...
+2025-08-20 14:54:19,558 - RecyclingPrediction - INFO - XGBoost R²: 0.7274
+2025-08-20 14:54:19,558 - RecyclingPrediction - INFO - Building stacking ensemble...
+2025-08-20 14:54:32,247 - RecyclingPrediction - INFO - Stacking Ensemble R²: 0.9730
+2025-08-20 14:54:32,487 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 14:54:32,489 - RecyclingPrediction - INFO - Saved results to datasets/processed/hybrid_model_results.csv
+2025-08-20 14:54:32,489 - RecyclingPrediction - INFO - Generating visualizations...
+2025-08-20 14:54:33,040 - RecyclingPrediction - INFO - Saved performance plot to static/hybrid_model_performance.png
+2025-08-20 14:54:33,040 - RecyclingPrediction - INFO - Feature importance not plotted for Stacking Ensemble
+2025-08-20 14:54:33,040 - RecyclingPrediction - INFO - Model trained: Stacking Ensemble, R²: 0.9730
+2025-08-20 14:54:33,040 - RecyclingPrediction - INFO - Saving model artifacts...
+2025-08-20 14:54:33,040 - RecyclingPrediction - INFO - Saved model to datasets/processed/scaler.pkl
+2025-08-20 14:54:33,040 - RecyclingPrediction - INFO - Saved model to datasets/processed/selector.pkl
+2025-08-20 14:54:33,363 - RecyclingPrediction - INFO - Saved model to datasets/processed/trained_model.pkl
+2025-08-20 14:54:33,363 - RecyclingPrediction - INFO - Saved model to datasets/processed/model_name.pkl
+2025-08-20 14:54:33,365 - RecyclingPrediction - INFO - Reloading artifacts...
+2025-08-20 14:54:33,567 - RecyclingPrediction - INFO - Loaded model from datasets/processed/trained_model.pkl
+2025-08-20 14:54:33,577 - RecyclingPrediction - INFO - Loaded model from datasets/processed/scaler.pkl
+2025-08-20 14:54:33,587 - RecyclingPrediction - INFO - Loaded model from datasets/processed/selector.pkl
+2025-08-20 14:54:33,588 - RecyclingPrediction - INFO - Loaded model from datasets/processed/model_name.pkl
+2025-08-20 14:54:33,589 - RecyclingPrediction - INFO - Loaded model from datasets/processed/target_encodings.pkl
+2025-08-20 14:54:33,589 - RecyclingPrediction - INFO - All artifacts loaded successfully
+2025-08-20 14:54:33,610 - RecyclingPrediction - INFO - Model artifacts loaded successfully.
+2025-08-20 14:54:33,611 - RecyclingPrediction - INFO - Training completed successfully
+2025-08-20 14:54:33,611 - RecyclingPrediction - INFO - Training completed. Best model: Stacking Ensemble, R²: 0.9730

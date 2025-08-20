@@ -1,0 +1,2 @@
+Model,R2_Score,RMSE,Dataset_Size,Features_Used
+Stacking Ensemble,0.9729742159175461,2.5986077404817114,3400,37

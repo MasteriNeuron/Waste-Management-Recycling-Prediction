@@ -328,7 +328,7 @@ def get_logs():
     try:
         log_file_path = os.path.join('logs', 'pipeline.log')
         if os.path.exists(log_file_path):
-            with open(log_file_path, 'r') as f:
+            with open(log_file_path, 'r', encoding='utf-8', errors='replace') as f:
                 logs = f.readlines()
             return jsonify({'status': 'success', 'logs': [log.strip() for log in logs]})
         else:

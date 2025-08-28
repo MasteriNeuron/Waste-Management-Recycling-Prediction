@@ -98,7 +98,7 @@ Run the Flask app and trigger training via the web interface:
 python app.py
 ```
 
-* Open [[http://localhost:5000](http://localhost:5000)](https://ecorecycle-v1eb.onrender.com/)
+* Go to [[ecorecycle.com](https://ecorecycle-v1eb.onrender.com/)]
 * Click **"Train Model"**
 
 Or run the training pipeline standalone:
@@ -128,7 +128,7 @@ Check:
   ```bash
   python app.py
   ```
-* Go to [http://localhost:5000](http://localhost:5000)
+* Go to [[ecorecycle.com](https://ecorecycle-v1eb.onrender.com/)]
 * Enter values for features (e.g., Waste Generated, City/District)
 * Submit ➝ **Predicted Recycling Rate (%)** ✅
 

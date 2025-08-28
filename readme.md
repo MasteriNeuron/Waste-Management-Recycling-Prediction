@@ -98,7 +98,7 @@ Run the Flask app and trigger training via the web interface:
 python app.py
 ```
 
-* Open [http://localhost:5000](http://localhost:5000)
+* Open [[http://localhost:5000](http://localhost:5000)](https://ecorecycle-v1eb.onrender.com/)
 * Click **"Train Model"**
 
 Or run the training pipeline standalone:

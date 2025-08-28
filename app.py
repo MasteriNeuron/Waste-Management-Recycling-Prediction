@@ -326,7 +326,7 @@ def download_file(filename):
 def get_logs():
     """Fetch all logs from logs/pipeline.log."""
     try:
-        log_file_path = os.path.join('logs', 'pipeline.log')
+        log_file_path = os.path.join('logs', 'pipeline1.log')
         if os.path.exists(log_file_path):
             with open(log_file_path, 'r', encoding='utf-8', errors='replace') as f:
                 logs = f.readlines()
@@ -341,4 +341,4 @@ def get_logs():
 # ----------------- Entrypoint -----------------
 if __name__ == '__main__':
     load_artifacts_global()
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8000)), debug=False)
+    app.run(host='0.0.0.0', debug=True)

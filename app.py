@@ -326,7 +326,7 @@ def download_file(filename):
 def get_logs():
     """Fetch all logs from logs/pipeline.log."""
     try:
-        log_file_path = os.path.join('logs', 'pipeline1.log')
+        log_file_path = os.path.join('logs', 'pipeline.log')
         if os.path.exists(log_file_path):
             with open(log_file_path, 'r', encoding='utf-8', errors='replace') as f:
                 logs = f.readlines()

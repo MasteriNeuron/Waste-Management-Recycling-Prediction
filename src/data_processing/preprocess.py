@@ -81,6 +81,9 @@ def hybrid_augmentation(df, target_col='Recycling Rate (%)'):
     augmented_dfs = [df]
     numeric_cols = df.select_dtypes(include=[np.number]).columns
     
+    # Convert numeric columns to float64 to avoid dtype warnings
+    df[numeric_cols] = df[numeric_cols].astype('float64')
+    
     df['Target_Bin'] = pd.qcut(df[target_col], q=10, labels=False, duplicates='drop')
     
     for bin_val in df['Target_Bin'].unique():
@@ -118,7 +121,6 @@ def hybrid_augmentation(df, target_col='Recycling Rate (%)'):
     final_df = pd.concat(augmented_dfs, ignore_index=True)
     final_df = final_df.drop('Target_Bin', axis=1, errors='ignore')
     logger.info(f"Augmented dataset size: {len(final_df)} (from {len(df)})")
-    #logger.info(f"final columns in argumented dataset {final_df.columns}")
     return final_df
 
 def preprocess_data(config):

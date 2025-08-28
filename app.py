@@ -340,5 +340,5 @@ def get_logs():
 
 # ----------------- Entrypoint -----------------
 if __name__ == '__main__':
-    load_artifacts_global()8
+    load_artifacts_global()
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8000)), debug=False)

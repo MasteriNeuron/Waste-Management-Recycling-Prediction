@@ -60,8 +60,9 @@ The dataset includes features like **Waste Generated (Tons/Day)**, **Population 
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
-- Python 3.8+ 🐍  
-- Virtual environment (recommended)  
+- Python 3.8+ (but go with latest version of python i.e. python=3.13) 🐍  
+- Virtual environment (recommended)
+- ```conda create -p env python=3.13 -y```
 - Dependencies listed in `requirements.txt`  
 
 ### ⚙️ Installation

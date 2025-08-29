@@ -9,10 +9,12 @@ import pickle
 from src.data_processing.preprocess import preprocess_data, load_config
 from src.utils.helper import save_model, plot_results
 from src.logger.logs import setup_logger
+from pymongo import MongoClient
+from gridfs import GridFS
 
 logger = setup_logger()
 
-def build_hybrid_model(X_train, y_train, X_test, y_test, X_full, y_full, scaler, config):
+def build_hybrid_model(X_train, y_train, X_test, y_test, X_full, y_full, scaler, config, fs=None):
     logger.info("Starting model training...")
     
     # LightGBM
@@ -163,8 +165,11 @@ def build_hybrid_model(X_train, y_train, X_test, y_test, X_full, y_full, scaler,
             best_model = deep_xgb
             y_test = y_test_full
     
-    # Save best model
-    save_model(best_model, config['paths']['model'])
+    # Save best model with MongoDB fs
+    if fs is not None:
+        save_model(best_model, config['paths']['model'], fs)
+    else:
+        logger.warning("fs not provided, skipping model save to MongoDB")
     
     # Save results
     results_summary = pd.DataFrame({
@@ -188,7 +193,7 @@ def main():
     
     # Preprocess data
     X_train, X_test, y_train, y_test, scaler, selector, selected_features = preprocess_data(config)
-    logger.info("selector:",selector)
+    logger.info("selector:", selector)
     # Load full features for Deep XGBoost
     df_augmented = pd.read_csv(config['paths']['processed_data'])
     feature_cols = [col for col in df_augmented.columns if col not in [
@@ -198,13 +203,19 @@ def main():
     X_full = df_augmented[feature_cols].fillna(df_augmented[feature_cols].mean())
     y_full = df_augmented['Recycling Rate (%)']
     
-    # Train model
-    best_pred, best_r2, best_model_name, best_model = build_hybrid_model(X_train, y_train, X_test, y_test, X_full, y_full, scaler, config)
+    # Initialize MongoDB for standalone mode
+    mongo_uri = os.environ.get('MONGODB_URI', 'mongodb+srv://master:master123@cluster0.1rxbk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+    client = MongoClient(mongo_uri)
+    db = client['recycling_prediction']
+    fs = GridFS(db)
     
-    # Save preprocessing artifacts
-    save_model(scaler, config['paths']['scaler'])
-    save_model(selector, config['paths']['selector'])
-    save_model(best_model_name, config['paths']['model_name'])
+    # Train model
+    best_pred, best_r2, best_model_name, best_model = build_hybrid_model(X_train, y_train, X_test, y_test, X_full, y_full, scaler, config, fs)
+    
+    # Save preprocessing artifacts with MongoDB fs
+    save_model(scaler, config['paths']['scaler'], fs)
+    save_model(selector, config['paths']['selector'], fs)
+    save_model(best_model_name, config['paths']['model_name'], fs)
     
     # Log final results
     logger.info("\nFinal Results:")

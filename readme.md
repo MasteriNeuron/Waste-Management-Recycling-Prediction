@@ -1,4 +1,5 @@
 # ♻️ Waste Management and Recycling Prediction Project
+<img width="1906" height="916" alt="image" src="https://github.com/user-attachments/assets/21550bc8-1cbd-4964-b960-264a630bb6e0" />
 
 ## 📋 Overview
 This project builds a **machine learning model** to predict the **Recycling Rate (%)** for waste management in Indian cities using the *Waste Management and Recycling in India dataset (2019–2023)*.  

@@ -8,6 +8,9 @@ from src.utils.helper import load_config, save_model
 from src.pipelines.prediction_pipelines import predict_single_instance, load_artifacts
 from src.pipelines.training_pipelines import build_hybrid_model
 from src.logger.logs import setup_logger
+from pymongo import MongoClient
+from gridfs import GridFS
+import pickle
 
 # ----------------- Flask App -----------------
 app = Flask(__name__, template_folder="templates", static_folder="static")
@@ -17,15 +20,29 @@ logger = setup_logger()
 config = load_config('src/config/config.yaml')
 artifacts = None  # will hold loaded model, scaler, selector, etc.
 
+# MongoDB Setup
+mongo_uri = os.environ.get('MONGODB_URI', 'mongodb+srv://master:master123@cluster0.1rxbk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+client = MongoClient(mongo_uri)
+db = client['recycling_prediction']
+fs = GridFS(db)
+
 def load_artifacts_global():
-    """Load model artifacts into a global variable."""
+    """Load model artifacts from MongoDB into a global variable."""
     global artifacts
     try:
-        artifacts = load_artifacts(config)
-        logger.info("Model artifacts loaded successfully.")
+        artifacts = {}
+        for artifact_name in ['trained_model.pkl', 'scaler.pkl', 'selector.pkl', 'model_name.pkl']:
+            grid_out = fs.find_one({"filename": artifact_name}, sort=[("uploadDate", -1)])
+            if grid_out:
+                artifacts[artifact_name.split('.')[0]] = pickle.loads(grid_out.read())
+                logger.info(f"Loaded {artifact_name} from MongoDB.")
+            else:
+                logger.error(f"Failed to load {artifact_name} from MongoDB.")
+                artifacts = None
+                return False
         return True
     except Exception as e:
-        logger.error(f"Failed to load artifacts: {e}")
+        logger.error(f"Failed to load artifacts from MongoDB: {e}")
         artifacts = None
         return False
 
@@ -227,13 +244,13 @@ def train():
             training_log.append(f"[{pd.Timestamp.now().strftime('%H:%M:%S')}] Model trained: {best_model_name}, R²: {best_r2:.4f}")
             logger.info(f"Model trained: {best_model_name}, R²: {best_r2:.4f}")
 
-            # Save artifacts
-            training_log.append(f"[{pd.Timestamp.now().strftime('%H:%M:%S')}] Saving model artifacts...")
-            logger.info("Saving model artifacts...")
-            save_model(scaler_new, config['paths']['scaler'])
-            save_model(selector_new, config['paths']['selector'])
-            save_model(best_model, config['paths']['model'])
-            save_model(best_model_name, config['paths']['model_name'])
+            # Save artifacts to MongoDB
+            training_log.append(f"[{pd.Timestamp.now().strftime('%H:%M:%S')}] Saving model artifacts to MongoDB...")
+            logger.info("Saving model artifacts to MongoDB...")
+            save_model(scaler_new, 'scaler.pkl', fs)
+            save_model(selector_new, 'selector.pkl', fs)
+            save_model(best_model, 'trained_model.pkl', fs)
+            save_model(best_model_name, 'model_name.pkl', fs)
 
             # Reload artifacts
             training_log.append(f"[{pd.Timestamp.now().strftime('%H:%M:%S')}] Reloading artifacts...")
@@ -341,4 +358,4 @@ def get_logs():
 # ----------------- Entrypoint -----------------
 if __name__ == '__main__':
     load_artifacts_global()
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)

@@ -8,6 +8,8 @@ import yaml
 import xgboost as xgb
 import lightgbm as lgb
 from src.logger.logs import setup_logger
+from pymongo import MongoClient
+from gridfs import GridFS
 
 logger = setup_logger()
 
@@ -22,22 +24,34 @@ def save_data(df, path):
     df.to_csv(path, index=False)
     logger.info(f"Saved data to {path}")
 
-def save_model(obj, path):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, 'wb') as f:
-        pickle.dump(obj, f)
-    logger.info(f"Saved model to {path}")
+def save_model(obj, path, fs):
+    """Save model object to MongoDB using GridFS."""
+    try:
+        binary_data = pickle.dumps(obj)
+        fs.put(binary_data, filename=path)
+        logger.info(f"Saved model to MongoDB with filename {path}")
+    except Exception as e:
+        logger.error(f"Failed to save model to MongoDB: {e}")
+
+def load_model(path, fs):
+    """Load model object from MongoDB using GridFS."""
+    try:
+        grid_out = fs.find_one({"filename": path}, sort=[("uploadDate", -1)])
+        if grid_out:
+            obj = pickle.loads(grid_out.read())
+            logger.info(f"Loaded model from MongoDB with filename {path}")
+            return obj
+        else:
+            logger.error(f"Failed to load model from MongoDB: No file found for {path}")
+            return None
+    except Exception as e:
+        logger.error(f"Failed to load model from MongoDB: {e}")
+        return None
 
 def load_data(path):
     df = pd.read_csv(path)
     logger.info(f"Loaded data from {path}")
     return df
-
-def load_model(path):
-    with open(path, 'rb') as f:
-        obj = pickle.load(f)
-    logger.info(f"Loaded model from {path}")
-    return obj
 
 def plot_results(y_test, y_pred, r2_score, model_name, model, config):
     logger.info("Generating visualizations...")
@@ -93,7 +107,7 @@ def plot_results(y_test, y_pred, r2_score, model_name, model, config):
     elif model_name in ['Random Forest', 'ExtraTrees']:
         plt.figure(figsize=(12, 8))
         feature_importance = model.feature_importances_
-        feature_names = X_train.columns if hasattr(X_train, 'columns') else [f'Feature {i}' for i in range(len(feature_importance))]
+        feature_names = X_train.columns if 'X_train' in globals() and hasattr(X_train, 'columns') else [f'Feature {i}' for i in range(len(feature_importance))]
         importance_df = pd.DataFrame({'Feature': feature_names, 'Importance': feature_importance})
         importance_df = importance_df.sort_values(by='Importance', ascending=False).head(20)
         sns.barplot(x='Importance', y='Feature', data=importance_df)
